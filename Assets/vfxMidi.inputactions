@@ -1,0 +1,129 @@
+{
+    "name": "vfxMidi",
+    "maps": [
+        {
+            "name": "Leaves",
+            "id": "af98e917-c8d1-4bb3-af25-f23ae92f74fd",
+            "actions": [
+                {
+                    "name": "triggerTop",
+                    "type": "Button",
+                    "id": "ef4709e8-86d1-4741-a24f-5659c6085c52",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "triggerBottom",
+                    "type": "Button",
+                    "id": "c8006d3b-c3f7-4f5c-811b-2146a80803e3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Fader",
+                    "type": "Value",
+                    "id": "6a570be1-9452-495b-b2da-d5b0e33fc09e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "57e3e42c-052c-4cc8-9754-44fe9b2788f5",
+                    "path": "<MidiDevice>/note041",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "triggerTop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2eed2ba3-6ebb-4413-a306-9841d12c55b0",
+                    "path": "<MidiDevice>/note073",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "New control scheme",
+                    "action": "triggerBottom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e231575-caad-4c60-91f6-72489e963d46",
+                    "path": "<MidiDevice>/control077",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "New control scheme",
+                    "action": "Fader",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "camera",
+            "id": "766614e4-9198-426a-beeb-29cdf7046f74",
+            "actions": [
+                {
+                    "name": "cameraZ",
+                    "type": "Value",
+                    "id": "98d157a3-2e07-4746-a17b-aeb4e0fbf669",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "cameraY",
+                    "type": "Value",
+                    "id": "76563534-cfc4-4ce0-9667-611a8460b7da",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3744cfd0-4067-4163-a55c-a609161a2215",
+                    "path": "<MidiDevice>/control020",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "New control scheme",
+                    "action": "cameraZ",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f96df379-2bf6-44ea-97a8-90d08da86427",
+                    "path": "<MidiDevice>/control036",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "cameraY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "New control scheme",
+            "bindingGroup": "New control scheme",
+            "devices": [
+                {
+                    "devicePath": "<MidiDevice>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
