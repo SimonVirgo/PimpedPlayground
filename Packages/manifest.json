@@ -1,5 +1,20 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Unity NuGet",
+      "url": "https://unitynuget-registry.azurewebsites.net",
+      "scopes": [ "org.nuget" ]
+    },
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [ "jp.keijiro" ]
+    }
+  ],
+
   "dependencies": {
+    "jp.keijiro.dkvfx": "0.1.2",
+    "jp.keijiro.akvfx": "1.0.4",
     "com.unity.collab-proxy": "1.15.16",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.14",
